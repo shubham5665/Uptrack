@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Child Companion</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* General styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Match the color scheme of other pages */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            border-bottom: 3px solid #3A9340;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            padding-left: 20px;
+        }
+
+        nav {
+            float: right;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .nav-links a.active {
+            font-weight: bold;
+            border-bottom: 2px solid #FFF;
+        }
+
+        section {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #4CAF50; /* Green accent for consistency */
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .about-text {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .about-text p {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: center;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        .about-image img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 1s forwards;
+        }
+
+        /* Add animations */
+        .animate-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 1s forwards;
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            text-align: center;
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">🌱 Child Companion</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="#about" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="signup.html" class="btn">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="animate-up">About Child Companion</h2>
+        <div class="about-content">
+            <div class="about-text animate-up">
+                <p>Child Companion is designed to be your partner in child development. Our platform offers valuable tools for parents to monitor, guide, and protect their children as they grow.</p>
+                <p>With a focus on safety, health, and development, we provide you with real-time information, growth tracking, health tips, and digital safety features that make parenting easier and more informed.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/happy-family.png" alt="Happy Family">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Child Companion | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
